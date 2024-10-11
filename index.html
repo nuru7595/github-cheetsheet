@@ -22,18 +22,101 @@
         <!--~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~-->
         <main class="px-1">
             <section>
-                <p>Comming soon ...</p>
-                <code></code>
+                <p class="title-top">Configure</p>
+                <code>git config --global user.name "USERNAME"</code>
+                <code>git config --global user.email "EMAIL"</code>
+                <p>To see the configuration:</p>
+                <code>git config --list</code>
+            </section>
+
+            <section>
+                <p class="title-top">Clone & Status</p>
+                <p>To clone a repository:</p>
+                <code>git clone LINK</code>
+                <p>To see files status:</p>
+                <code>git status</code>
+            </section>
+
+            <section>
+                <p class="title-top">Add & Commit</p>
+                <p>To add files:</p>
+                <code>git add FILENAME FILENAME</code>
+                <p>To commit added files:</p>
+                <code>git commit -m "MESSAGE"</code>
+            </section>
+
+            <section>
+                <p class="title-top">Push</p>
+                <p>To push commited files only first time:</p>
+                <code>git push -u origin main</code>
+                <p>To push commited files except first time:</p>
+                <code>git push</code>
+            </section>
+
+            <section>
+                <p class="title-top">Init</p>
+                <p>To init:</p>
+                <code>git init</code>
+                <p>To add a git repository:</p>
+                <code>git remote add origin LINK</code>
+                <p>To check the repository:</p>
+                <code>git remote -v</code>
+                <p>To check branch:</p>
+                <code>git branch</code>
+                <p>To rename branch:</p>
+                <code>git branch -M main</code>
+            </section>
+
+            <section>
+                <p class="title-top">Branch</p>
+                <p>To check branch:</p>
+                <code>git branch</code>
+                <p>To change branch:</p>
+                <code>git checkout BRANCH_NAME</code>
+                <p>To create branch:</p>
+                <code>git checkout -b BRANCH_NAME</code>
+                <p>To delete branch:</p>
+                <code>git branch -d BRANCH_NAME</code>
+            </section>
+
+            <section>
+                <p class="title-top">Merge Branch</p>
+                <p>To compare with another branch:</p>
+                <code>git diff BRANCH_NAME</code>
+                <p>To merge branch:</p>
+                <code>git merge BRANCH_NAME</code>
+            </section>
+
+            <section>
+                <p class="title-top">Pull</p>
+                <p>To update local codes from git:</p>
+                <code>git pull origin main</code>
+            </section>
+
+            <section>
+                <p class="title-top">Undo</p>
+                <p>To undo add:</p>
+                <code>git reset FILENAME FILENAME</code>
+                <p>To undo add (all files):</p>
+                <code>git reset</code>
+                <p>To undo commit (1 step back):</p>
+                <code>git reset HEAD~1</code>
+                <p>To undo commit (multiple step back):</p>
+                <code>git reset COMMIT_HASH</code>
+                <p>To undo commit and backdate vs code:</p>
+                <code>git reset --hard COMMIT_HASH</code>
+                <p>To get hash code:</p>
+                <code>git log</code>
             </section>
 
             <!-- Details -->
             <section class="text-sm">
-                <p class="mb-2 text-base text-center border-b border-white border-dashed ">Details</p>
+                <p class="title-top">Details</p>
                 <p>Started: 10 October 2024</p>
-                <p>Updated: 10 October 2024</p>
-                <p>Making Time: 1H 26M</p>
+                <p>Updated: 11 October 2024</p>
+                <p>Making Time: 2H 11M</p>
                 <p>Course: <a href="https://youtu.be/Ez8F0nW6S-w" target="_blank" class="underline">Apna College</a></p>
-                <p class="mt-2 text-base text-center border-t border-white border-dashed ">Status: <span class="text-green-500">Active</span></p>
+                <p class="mt-2 text-base text-center border-t border-white border-dashed">Status: <span class="text-red-500">Closed!</span></p>
             </section>
             
             <section class="text-center">
